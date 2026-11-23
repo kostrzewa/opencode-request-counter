@@ -1,0 +1,23 @@
+{
+  "name": "opencode-request-counter",
+  "version": "0.1.0",
+  "description": "opencode plugin: counts LLM requests per provider per day across all instances, with a configurable daily maximum and a sidebar widget",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    "./server": "./src/server.ts",
+    "./tui": "./src/tui.tsx"
+  },
+  "scripts": {
+    "test": "BUN_BE_BUN=1 opencode test",
+    "typecheck": "BUN_BE_BUN=1 opencode x tsc --noEmit"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "1.19.5",
+    "@opentui/core": "0.4.5",
+    "@opentui/keymap": "0.4.5",
+    "@opentui/solid": "0.4.5",
+    "@types/bun": "^1.4.5",
+    "typescript": "^7.0.2"
+  }
+}
