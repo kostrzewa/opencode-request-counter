@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "opencode plugin: counts LLM requests per provider per day across all instances, with a configurable daily maximum and a sidebar widget",
   "type": "module",
-  "license": "MIT",
+  "license": "Apache-2.0 WITH LLVM-exception",
   "exports": {
     "./server": "./src/server.ts",
     "./tui": "./src/tui.tsx"
