@@ -35,7 +35,7 @@ Don't put the database on a network filesystem (NFS), because SQLite locking isn
 
 ```jsonc
 "plugin": [
-  ["/home/bartek/code/opencode-request-counter/src/server.ts", {
+  ["/path/to/opencode-request-counter/src/server.ts", {
     "limits": { "academiccloud": 800 },  // provider id -> max requests per day
     "timezone": "Europe/Berlin",         // the day rolls over at this timezone's midnight (default: system tz)
     "warnAt": 0.8                        // warn from 80% (default 0.8)
@@ -47,7 +47,7 @@ Don't put the database on a network filesystem (NFS), because SQLite locking isn
 `~/.config/opencode/tui.json` (sidebar widget):
 
 ```json
-"plugin": ["/home/bartek/code/opencode-request-counter/src/tui.tsx"]
+"plugin": ["/path/to/opencode-request-counter/src/tui.tsx"]
 ```
 
 If you set `dbPath`, set the same value in the TUI entry too: `["…/src/tui.tsx", { "dbPath": "…" }]`. The server writes the limits, timezone and `warnAt` into the database, so the widget needs no other configuration.
