@@ -16,7 +16,7 @@ resets in 5h 54m
 
 ## What is counted
 
-Every call to the model counts. The `chat.params` hook fires once per call: each agent-loop step, each retry, title generation and compaction. That matches how provider quotas count requests. It applies equally to the TUI, `opencode run` and `opencode serve`/web.
+Every call to the model counts. The `chat.params` hook fires once per call: each agent-loop step, each retry, title generation and compaction. That matches how provider quotas count requests. It applies equally to the TUI, `opencode run` and `opencode serve`.
 
 ## How counts are shared
 
